@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function main(){
+        let dayofweek="wednesday";
+        let activity;
+        switch (dayofweek){
+            case "monday":
+                activity="start of the work week";
+                break;
+                   case "Tuesday":
+                    case "wednesday"://fall through for both tuesday and wednesday
+                activity="mid week task and meetings";
+                break;
+                   case "Thursday":
+                activity="prepare for weekend";
+                break;
+                   case "Friday":
+                activity="end of the  week";
+                break;
+                   case "Saturday":
+                    case "Sunday":
+                activity="weekend relaxation and hobbies";
+                break;
+                   default:
+                activity="invalid of the  week";
+        
+    }
+            console.log(`Today is ${dayofweek}.Activity: ${activity}`);
+            main();
+        }
+    </script>
+</head>
+<body>
+<h1>Conditional Statements</h1>    
+</body>
+</html>
